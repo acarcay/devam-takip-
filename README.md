@@ -18,7 +18,7 @@ npm run check
 npm run build:web
 ```
 
-Statik yayın klasörü `dist/` olur. Hosting sağlayıcısında proje kökü bu klasörün üstündeki ana proje, build komutu `npm run build:web`, çıktı klasörü `dist` olmalıdır. `web/` ve `vahap-usta-site/` başka çalışmalardır, DevamTakip yayınına dahil edilmemelidir.
+Statik yayın klasörü `dist/` olur. Hosting sağlayıcısında proje kökü bu klasörün üstündeki ana proje, build komutu `npm run build:web`, çıktı klasörü `dist` olmalıdır.
 
 HTTPS kullanın. Yeni sürüm aynı alan adı üzerinde yayımlanmalıdır; farklı alan adları ve portlar farklı yerel depolama alanlarıdır. Alan adı değiştirmeden önce kullanıcılar yedek almalıdır. `_headers` destekleyen statik servislerde temel güvenlik başlıkları uygulanır; diğer servislerde eşdeğer başlıkları tanımlayın.
 
