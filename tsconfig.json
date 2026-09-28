@@ -1,0 +1,6 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": { "allowJs": true, "checkJs": false },
+  "include": ["App.js", "index.js", "src/**/*.js"],
+  "exclude": ["node_modules", "web", "vahap-usta-site", "dist", "tests"]
+}

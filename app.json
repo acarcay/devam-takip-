@@ -1,24 +1,45 @@
 {
   "expo": {
-    "name": "devam-takip",
+    "name": "DevamTakip",
     "slug": "devam-takip",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#6757E8"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Ders programı ekran görüntüsünü seçebilmek için fotoğraflara erişim izni gereklidir.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#F7F8FC",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundImage": "./assets/android-icon-background.png"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "DevamTakip",
+      "shortName": "DevamTakip",
+      "description": "Ders programını ve devamsızlık haklarını cihazında takip et.",
+      "bundler": "metro",
+      "output": "single"
     }
   }
 }
