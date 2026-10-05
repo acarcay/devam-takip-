@@ -4,7 +4,7 @@
     "slug": "devam-takip",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/devamtakip-logo.png",
     "userInterfaceStyle": "light",
     "plugins": [
       [
@@ -34,7 +34,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png",
+      "favicon": "./assets/devamtakip-favicon.png",
       "name": "DevamTakip",
       "shortName": "DevamTakip",
       "lang": "tr",
