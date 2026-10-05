@@ -20,6 +20,8 @@ npm run build:web
 
 Statik yayın klasörü `dist/` olur. Hosting sağlayıcısında proje kökü bu klasörün üstündeki ana proje, build komutu `npm run build:web`, çıktı klasörü `dist` olmalıdır.
 
+Netlify ayarları `netlify.toml` içinde hazırdır. Projeyi GitHub deposundan içe aktarmak yeterlidir; SPA yönlendirmesi ve Node sürümü otomatik uygulanır.
+
 HTTPS kullanın. Yeni sürüm aynı alan adı üzerinde yayımlanmalıdır; farklı alan adları ve portlar farklı yerel depolama alanlarıdır. Alan adı değiştirmeden önce kullanıcılar yedek almalıdır. `_headers` destekleyen statik servislerde temel güvenlik başlıkları uygulanır; diğer servislerde eşdeğer başlıkları tanımlayın.
 
 CI lint, iş kuralları testleri, proje kapsamı TypeScript kontrolü ve web paketlemesini çalıştırır. JavaScript için tam tip denetimi açık değildir; lint tanımsız isimleri ve temel hataları yakalar. Üretim çıktısı ayrıca gerçek tarayıcıda test edilmelidir.
@@ -34,5 +36,6 @@ CI lint, iş kuralları testleri, proje kapsamı TypeScript kontrolü ve web pak
 - Varsayılan dönem ve tatiller İEÜ 2026–2027 içindir. Dönem tarihleri Ayarlar'dan değişir; sonraki yılların tatilleri kodda güncellenmelidir.
 - Verileri silmeden önce Ayarlar'dan yedek indirin. JSON metnini yapıştırarak geri yükleyebilirsiniz. Son aktarımın öncesine dönme seçeneği vardır.
 - OCR motoru ve dil dosyaları üçüncü taraf CDN'den indirilir; görsel cihazda işlenir. Çevrimdışı OCR garanti edilmez.
+- Gizlilik açıklaması uygulamadaki Ayarlar ekranından ve `/gizlilik.html` adresinden açılabilir. Destek talepleri GitHub Issues üzerinden alınır; herkese açık taleplere kişisel ders veya yedek verisi eklenmemelidir.
 
 Yayın kontrolü: [docs/RELEASE.md](docs/RELEASE.md).

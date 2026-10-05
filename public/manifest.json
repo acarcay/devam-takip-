@@ -1,0 +1,25 @@
+{
+  "name": "DevamTakip",
+  "short_name": "DevamTakip",
+  "description": "Ders programını ve devamsızlık haklarını cihazında takip et.",
+  "lang": "tr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F8FC",
+  "theme_color": "#6757E8",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

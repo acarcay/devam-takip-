@@ -50,5 +50,7 @@ export default function SettingsPanel({ settings, notificationStatus, onChanged,
     <Text>Görsel okuma cihazında yapılır. OCR motoru ve dil dosyaları internetten indirilir; bağlantı gereklidir. Görsel uygulamamız tarafından bir sunucuya yüklenmez. Dış sağlayıcılar indirme sırasında IP adresini görebilir.</Text>
     <Text>Devamsızlık sınırını okulunun kurallarına göre belirle. Uygulama yalnızca girdiğin kayıtları hesaplar; resmî yoklama sisteminin yerine geçmez. Aynı gün aynı durumu yeniden kaydetmek o kaydı günceller. Yanlış durumdaki kaydı Geçmiş ekranından silip yeniden girebilirsin.</Text>
     <Text>Bildirim sorunu için telefon izinlerini, dönem tarihlerini ve ders saatini kontrol et. OCR çalışmazsa metin aktarımını kullan. Kayıt hatası görürsen uygulamayı silmeden tekrar dene ve mevcut verini yedekle.</Text>
+    {Platform.OS === 'web' && <Button title="Gizlilik bilgisini aç" onPress={() => Linking.openURL('/gizlilik.html')} />}
+    <Button title="Destek / sorun bildir" onPress={() => Linking.openURL('https://github.com/acarcay/devam-takip-/issues')} />
   </View>;
 }

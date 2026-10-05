@@ -37,7 +37,14 @@
       "favicon": "./assets/favicon.png",
       "name": "DevamTakip",
       "shortName": "DevamTakip",
+      "lang": "tr",
+      "dir": "ltr",
       "description": "Ders programını ve devamsızlık haklarını cihazında takip et.",
+      "display": "standalone",
+      "startUrl": "/",
+      "scope": "/",
+      "themeColor": "#6757E8",
+      "backgroundColor": "#F7F8FC",
       "bundler": "metro",
       "output": "single"
     }
